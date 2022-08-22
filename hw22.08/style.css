@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.box:nth-child(1) {
+    background-color: rgb(253, 170, 206);
+    top: 50px;
+    left: 50px;
+    z-index: -2;
+}
+
+.box:nth-child(2) {
+    background-color: rgb(173, 170, 253);
+    top: 160px;
+    left: 145px;
+    z-index: 1;
+}
+
+.box:nth-child(3) {
+    background-color: rgb(170, 253, 214);
+    top: 260px;
+    left: 240px;
+    z-index: -1;
+}
