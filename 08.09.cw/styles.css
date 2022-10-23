@@ -219,7 +219,7 @@ p {
     background-color: #4e73db;
 }
 
-@media screen and (min-width: 768px;) {
+@media screen and (min-width: 768px) {
     .main-header {
         min-height: 600px;
     }
