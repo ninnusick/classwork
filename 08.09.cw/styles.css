@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.main-header {
+    background-image: url(./imgs/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 19px;
+
+    height: 542px;
+}
+
+.container {
+    max-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.9859px;
+    line-height: 17px;
+    color: #fff;
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    height: 173px;
+}
+
+.signup {
+    padding: 11px 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.main-button {
+    background-color: #ff4e50;
+    padding: 13px 37px;
+    border-radius: 30px;
+}
+
+.main-content {
+    margin-top: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+.main-content .main-heading {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.041px;
+    line-height: 37px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-content .main-text {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    width: 247.03px;
+    height: 43px;
+    font-size: 18.02px;
+    text-align: center;
+    margin: 15px;
+}
+
+.partners-container .partners-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 60px;
+    text-align: center;
+    width: 288.01px;
+    height: 55px;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+}
+
+.one-partner {
+    margin-top: 30px;
+    text-align: center;
+    flex-basis: 235px;
+}
+
+.name {
+    color: #333333;
+    margin-top: 13px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14.0112px;
+    line-height: 17px;
+}
+
+.descr {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #666666;
+    margin-top: 13px;
+    line-height: 16px;
+    padding: 0 5px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 14px;
+}
+.one-partner-img {
+    position: relative;
+    display: inline-block;
+}
+.last-button {
+    margin-top: 27px;
+    text-align: center;
+}
+
+.button-see {
+    padding: 12px 69px;
+    border: #ff4e50 2px solid;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    color: #ff4e50;
+    font-weight: 700;
+    font-size: 14.001px;
+}
+
+.one-partner-img::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    right: 0;
+    bottom: 0;
+    border: #fff 4px solid;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.one-partner-img.img1::after {
+    background-image: url(./imgs/tv.png);
+    background-color: #ff4e50;
+}
+
+.one-partner-img.img2::after {
+    background-image: url(./imgs/flask.png);
+    background-color: #ffa507;
+}
+
+.one-partner-img.img3::after {
+    background-image: url(./imgs/coffee.png);
+    background-color: #1cd7ad;
+}
+
+.one-partner-img.img4::after {
+    background-image: url(./imgs/tg.png);
+    background-color: #4e73db;
+}
+
+@media screen and (min-width: 768px;) {
+    .main-header {
+        min-height: 600px;
+    }
+    .container,
+    .partners-container {
+        max-width: 768px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0 auto;
+    }
+    .logo {
+        padding-top: 0px;
+    }
+    .main-content {
+        margin-top: 135px;
+    }
+    .main-heading {
+        font-size: 52px;
+        line-height: 63px;
+    }
+    .header {
+        max-width: 670px;
+        flex-direction: row;
+    }
+    .partners-container {
+        max-width: 510px;
+    }
+    .one-partner:first-child {
+        margin-top: 30px;
+    }
+}
