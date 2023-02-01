@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+div {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(211, 209, 209);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+}
+section {
+  width: 500px;
+  height: 700px;
+}
+p {
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-top: 10px;
+}
